@@ -1,32 +1,20 @@
-# Utiliser une image de base Node
-FROM node:14 AS build
+# Utiliser une image de base avec Node.js préinstallé
+FROM node:latest 
 
-# Définir le répertoire de travail dans le conteneur
-WORKDIR /app
+# Définir le répertoire de travail dans le conteneur 
+WORKDIR /app 
 
-# Copier les fichiers package.json et package-lock.json
-COPY package*.json ./
+# Copier les fichiers du projet dans le conteneur 
+COPY . . 
 
-# Installer les dépendances
-RUN npm install
+# Installer les dépendances du projet 
+RUN npm install 
 
-# Copier le reste de l'application
-COPY . .
+# Construire l'application React pour la production 
+RUN npm run build 
 
-# Donne les permissions pour npm run build
-RUN chmod +x node_modules/.bin/react-scripts
+# Définir le port sur lequel l'application fonctionnera dans le conteneur 
+EXPOSE 5173 
 
-# Compiler l'application React
-RUN npm run build
-
-# Utiliser une image de serveur pour servir les fichiers statiques
-FROM nginx:alpine
-
-# Copier les fichiers de build React dans le répertoire NGINX
-COPY --from=build /app/build /usr/share/nginx/html
-
-# Exposer le port 80
-EXPOSE 80
-
-# Démarrer NGINX
-CMD ["nginx", "-g", "daemon off;"]
+# Commande pour démarrer l'application React 
+CMD ["npm", "start"]
