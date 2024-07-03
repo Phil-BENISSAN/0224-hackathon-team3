@@ -1,8 +1,12 @@
-import React from 'react'
+import IdeaBox from "../../components/IdeaBox/IdeaBox"
+
 
 function HomePage() {
   return (
-    
+    <>
+    <h1>Includify</h1>
+    <IdeaBox />
+    </>
   )
 }
 

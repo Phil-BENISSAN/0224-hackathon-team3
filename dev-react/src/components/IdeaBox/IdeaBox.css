@@ -1,0 +1,14 @@
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boiteDePandore {
+    width: 20rem;
+}
+
+.buttonSubmission {
+    width: 10rem;
+    height: 2rem;
+}
