@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 import HomePage from "./pages/HomePage/HomePage.jsx";
 import ErrorPage404 from "./pages/ErrorPage404/ErrorPage404.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage404 />,
     children: [
       { path: "/", element: <HomePage /> },
+      {
+        path: "/contact",
+        element: <Contact />,
+        errorElement: <ErrorPage404 />,
+      },
     ],
   },
 ]);

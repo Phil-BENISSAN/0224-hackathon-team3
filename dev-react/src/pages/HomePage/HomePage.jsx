@@ -1,9 +1,14 @@
+
+import IdeaBox from "../../components/IdeaBox/IdeaBox"
 import Slider from "../../components/slider"
+
 
 function HomePage() {
   return (
     <>
-    <h1>Hello</h1>
+
+    <h1>Includify</h1>
+    <IdeaBox />
     <Slider />
     </>
   )

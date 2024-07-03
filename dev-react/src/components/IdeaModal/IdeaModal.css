@@ -1,0 +1,16 @@
+.dialog {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  height: 50vh;
+}
+
+.modalLabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.placeholder {
+  width: 15rem;
+  height: 15rem;
+}
