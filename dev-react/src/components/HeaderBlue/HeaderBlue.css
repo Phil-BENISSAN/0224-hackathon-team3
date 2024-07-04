@@ -1,0 +1,8 @@
+header {
+    background-color: var(--bg-secondary-color);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.blueLogo {
+    width: 21rem;
+}

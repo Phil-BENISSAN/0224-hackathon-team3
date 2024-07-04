@@ -1,8 +1,10 @@
-import React from 'react'
+import HeaderWhite from '../../components/HeaderWhite/HeaderWhite'
 
 function BoxPage() {
   return (
-    <div>BoxPage</div>
+    <>
+      <HeaderWhite />
+    </>
   )
 }
 
