@@ -1,5 +1,5 @@
 import { useState } from "react";
-import box from "../../assets/boite-de-pandore.jpg";
+git 
 import IdeaModal from "../IdeaModal/IdeaModal";
 
 import "./IdeaBox.css";
