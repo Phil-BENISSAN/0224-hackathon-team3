@@ -1,0 +1,21 @@
+.main404 {
+  background-color: var(--BACKGROOUND);
+}
+
+.figure404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image404 {
+  width: 435px;
+  margin-right: 1rem;
+}
+
+.caption404 {
+  font-family: "arimo", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 73px;
+}

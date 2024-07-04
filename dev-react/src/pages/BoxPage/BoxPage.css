@@ -1,4 +1,5 @@
 .titleIdée {
+  font-family: "arimo", sans-serif;
   text-align: center;
 }
 .formulaireIdée {
@@ -21,6 +22,9 @@
 }
 
 .buttonIdée {
+    font-family: "arimo", sans-serif;
+    background-color: var(--darkblue-color);
+    color: var(--bg-primary-color);
   width: 251px;
   height: 64px;
 }
