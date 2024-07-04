@@ -9,6 +9,7 @@ import Contact from "./pages/Contact/Contact.jsx";
 import CGU from "./pages/CGU/CGU.jsx";
 import LegalMentions from "./pages/LegalMentions/LegalMentions.jsx";
 import ProtectionDataPolicy from "./pages/ProtectionDataPolicy/ProtectionDataPolicy.jsx";
+import BoxPage from "./pages/BoxPage/BoxPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: "/ProtectionDataPolicy",
         element: <ProtectionDataPolicy />,
+        errorElement: <ErrorPage404 />,
+      },
+      {
+        path: "/boxPage",
+        element: <BoxPage />,
         errorElement: <ErrorPage404 />,
       },
     ],
