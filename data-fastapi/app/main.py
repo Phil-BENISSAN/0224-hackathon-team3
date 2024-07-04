@@ -41,7 +41,7 @@ def fn_fast_api():
 @app.get('/personnages')
 def fn_fast_api():
     
-    df_personnages = pd.read_csv("app/df_personnages.csv")
+    df_personnages = pd.read_csv("app/df_personnes_celebres.csv")
     
     dict_from_df = df_personnages.to_dict('records')
     
@@ -65,9 +65,9 @@ async def create_item(item: Item):
 
 
 @app.get("/ideas")
-async def give_item(item: Item):
+async def give_item():
     
-    return "OK ca fonctionne"
+    return "OK ça fonctionne"
 
 #------------------------------------------------------
 
