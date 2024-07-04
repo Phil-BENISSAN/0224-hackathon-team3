@@ -1,3 +1,4 @@
+
 import Slider from "../../components/slider/slider";
 import DropAnIdea from "../../components/DropAnIdea/DropAnIdea";
 import HeaderBlue from "../../components/HeaderBlue/HeaderBlue";
@@ -18,7 +19,6 @@ function HomePage() {
           l'anonymat pour encourager une participation honnête.
         </p>
         <DropAnIdea />
-
         <Slider />
       </main>
     </>
