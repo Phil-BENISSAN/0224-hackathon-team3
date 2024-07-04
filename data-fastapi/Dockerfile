@@ -29,6 +29,7 @@ RUN rm -rf /var/log/*
 RUN apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* \ /var/cache/apt/archives/* /tmp/* /var/tmp/*
 
 COPY . .
+
 # ______________________________________________________________________________________________________________________
 
 
@@ -36,4 +37,6 @@ COPY . .
 EXPOSE 8000
 
 # Lancer l'application FastAPI
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+

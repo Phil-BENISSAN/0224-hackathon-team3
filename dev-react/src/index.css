@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Moulpali&display=swap');
+
 :root {
-    --bg-primary-color: #FFFEFC;
-    --bg-secondary-color: #6F78D8;
-    --darkblue-color: #0D2149;
-  }
+  --bg-primary-color: #fffefc;
+  --bg-secondary-color: #6f78d8;
+  --darkblue-color: #0d2149;
+  --BACKGROOUND: #f2f2f2;
+}

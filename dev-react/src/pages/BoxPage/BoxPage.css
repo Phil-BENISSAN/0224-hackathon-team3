@@ -1,0 +1,30 @@
+.titleIdée {
+  font-family: "arimo", sans-serif;
+  text-align: center;
+}
+.formulaireIdée {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputIdée {
+  margin: 1rem 0;
+  width: 820px;
+  height: 94px;
+}
+
+.textareaIdée {
+  margin: 1rem 0;
+  width: 820px;
+  height: 814px;
+}
+
+.buttonIdée {
+    font-family: "arimo", sans-serif;
+    background-color: var(--darkblue-color);
+    color: var(--bg-primary-color);
+  width: 251px;
+  height: 64px;
+}
