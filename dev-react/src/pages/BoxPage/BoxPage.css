@@ -1,0 +1,26 @@
+.titleIdée {
+  text-align: center;
+}
+.formulaireIdée {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputIdée {
+  margin: 3rem 0;
+  width: 820px;
+  height: 94px;
+}
+
+.textareaIdée {
+  margin: 3rem 0;
+  width: 820px;
+  height: 814px;
+}
+
+.buttonIdée {
+  width: 251px;
+  height: 64px;
+}
