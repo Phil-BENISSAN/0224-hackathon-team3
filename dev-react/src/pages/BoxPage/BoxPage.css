@@ -1,3 +1,10 @@
+.mainBoxPage {
+  background-image: url("../../assets/BACKGROUND-BOX-PAGE.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .titleIdée {
   font-family: "arimo", sans-serif;
   text-align: center;
