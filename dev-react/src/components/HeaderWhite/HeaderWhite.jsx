@@ -3,7 +3,7 @@ import "./HeaderWhite.css"
 
 function HeaderWhite() {
   return (
-    <header>
+    <header className="whiteHeader">
         <img src={whiteLogo} alt="Logo includify" className="WhiteLogo"/>
     </header>
   )
