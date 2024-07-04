@@ -1,20 +1,16 @@
 import uvicorn
 from fastapi import FastAPI, Response
 import pandas as pd
-import fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware
 
 from pydantic import BaseModel
-
 app = FastAPI()
 
 class Item(BaseModel):
     title : str
     idea  : str
-    
-    
-
-
-
+     
+  
 # -------------------------------------------------   CONFIGURATION CORS   ------------------------------------------------------
 
 origins = [
@@ -44,9 +40,11 @@ def fn_fast_api():
 
 @app.get('/personnages')
 def fn_fast_api():
-    df_personnages = pd.read_csv("df_personnages.csv")
+    
+    df_personnages = pd.read_csv("app/df_personnages.csv")
     
     dict_from_df = df_personnages.to_dict('records')
+    
 # -------  INSERER VOTRE CODE ICI -----------------
     
     return dict_from_df
@@ -57,12 +55,21 @@ def fn_fast_api():
 
 
 
-@app.post("/ideas/")
+@app.post("/ideas")
 async def create_item(item: Item):
+    
     return {"item": item}
 
 #------------------------------------------------------
 
+
+
+@app.get("/ideas")
+async def give_item(item: Item):
+    
+    return "OK ca fonctionne"
+
+#------------------------------------------------------
 
 if __name__ == '__main__':
     uvicorn.run(app, port=8000, host='0.0.0.0')

@@ -2,7 +2,7 @@
 
 Commande pour construire les images et démarrer le container :
 
-    - docker compose up --build -d
+    - docker compose up --build
   
 Arreter le container
 
