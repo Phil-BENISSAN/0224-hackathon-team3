@@ -9,7 +9,7 @@ function BoxPage() {
   const [idea, setIdea] = useState("");
 
   const submitForm = async () => {
-    const response = await fetch("YOUR_BACKEND_ENDPOINT_URL", {
+    const response = await fetch("http://localhost:8000/ideas", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,6 +31,7 @@ function BoxPage() {
 
   return (
     <>
+    <main className="mainBoxPage">
       <HeaderWhite />
       <h2 className="titleIdée">Proposez une idée !</h2>
       <form
@@ -61,6 +62,7 @@ function BoxPage() {
           Partager
         </button>
       </form>
+      </main>
     </>
   );
 }
