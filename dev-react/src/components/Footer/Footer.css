@@ -1,26 +1,78 @@
-.footer {
-    display: flex;
+*{
+    padding: 0;
 }
 
-.footer__ul{
-    list-style: none;
-    flex-direction: column;
+.footer {
+  display: flex;
+  background-color: var(--bg-secondary-color);
+  border-radius: 1rem 1rem 0 0;
+  margin-top: 5rem;
+  justify-content: space-between;
+  font-size: 17px;
 }
-.footer__li{}
-.footer__linkedin-link{}
-.footer__linkedin-img{}
-.footer__li{}
-.footer__insta-link{}
-.footer__insta-img{}
-.footer__li{}
-.footer__x-link{}
-.footer__x-img{}
-.footer__li{}
-.footer__contact{}
-.footer__ul{}
-.footer__li{}
-.footer__cgu{}
-.footer__li{}
-.footer__pdd{}
-.footer__li{}
-.footer__mentions{}
+
+.footer__ul {
+  list-style: none;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.footer__ul-mentions {
+    margin-left: 40px;
+    list-style: none;
+}
+
+.footer__ul-network {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: auto;
+}
+
+.footer__facebook-img {
+    margin-right: 1rem;
+}
+
+.footer__insta-img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.footer__x-img {
+  margin-top: 0.2rem;
+}
+
+.footer__contact {
+  text-decoration: none;
+  color: var(--bg-primary-color);
+}
+
+.footer__li-contact {
+  list-style: none;
+  padding-right: 40px;
+}
+
+.footer__li-info {
+  list-style: none;
+  color: #f2f2f2;
+}
+
+.footer__li-team {
+  list-style: none;
+  color: #f2f2f2;
+}
+
+.footer__cgu {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.footer__pdd {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.footer__mentions {
+  text-decoration: none;
+  color: #f2f2f2;
+}
