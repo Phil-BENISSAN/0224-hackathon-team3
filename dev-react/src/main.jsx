@@ -11,13 +11,20 @@ import LegalMentions from "./pages/LegalMentions/LegalMentions.jsx";
 import ProtectionDataPolicy from "./pages/ProtectionDataPolicy/ProtectionDataPolicy.jsx";
 import BoxPage from "./pages/BoxPage/BoxPage.jsx";
 
+
 const router = createBrowserRouter([
   {
     element: <App />,
 
     errorElement: <ErrorPage404 />,
     children: [
-      { path: "/", element: <HomePage /> },
+      {
+        path: "/",
+        element: <HomePage />,
+        loader: () => fetch("http://localhost:8000/personnages")
+        .then((response) => response.json())
+        .then((data) => data),
+      },
       {
         path: "/contact",
         element: <Contact />,

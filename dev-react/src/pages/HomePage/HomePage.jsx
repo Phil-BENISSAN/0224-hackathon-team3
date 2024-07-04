@@ -1,3 +1,4 @@
+import { useLoaderData } from "react-router-dom";
 
 import Slider from "../../components/slider/slider";
 import DropAnIdea from "../../components/DropAnIdea/DropAnIdea";
@@ -6,6 +7,9 @@ import HeaderBlue from "../../components/HeaderBlue/HeaderBlue";
 import "./HomePage.css";
 
 function HomePage() {
+const characters = useLoaderData();
+
+
   return (
     <>
       <HeaderBlue />
@@ -20,7 +24,7 @@ function HomePage() {
         </p>
         <DropAnIdea />
         <h2 className="titleSlider">Les idées partagées</h2>
-        <Slider />
+        <Slider characters= {characters}/>
       </main>
     </>
   );
