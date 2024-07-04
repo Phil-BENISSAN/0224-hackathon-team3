@@ -1,8 +1,4 @@
-import Slider from "../../components/slider";
 
-import { Link } from "react-router-dom";
-
-import IdeaBox from "../../components/IdeaBox/IdeaBox";
 import Slider from "../../components/slider/slider";
 
 import "./HomePage.css";
@@ -23,7 +19,6 @@ function HomePage() {
           l'anonymat pour encourager une participation honnête.
         </p>
         <DropAnIdea />
-
         <Slider />
       </main>
     </>
