@@ -1,32 +1,57 @@
 .card {
-  background-color: #FFFEFC;
-  border: 0.1rem solid #F8B334;
+  margin: 5rem;
+  cursor: pointer;
+  background-color: #fffefc;
+  border: 0.1rem solid #f8b334;
+  color: #0d2149;
   border-radius: 2rem;
   height: 25rem;
   width: 17rem;
 }
 
+.card-back {
+  background-color: #fffefc;
+  color: #0d2149;
+  transform: rotateY(0);
+  transition: background-color 1s, transform 1s;
+}
+.card-front {
+  background-color: yellow;
+  color: red;
+  transform: rotateY(360deg);
+  transition: background-color 1s, transform 1s;
+}
+.card:hover {
+  border-color: #f8b334;
+  border: 20px solid #6f78d8;
+}
+.backFont {
+  font-size: 500%;
+  text-align: center;
+}
+
 .card__top {
-    border-radius: 2rem 2rem 0 2rem;
-    display: flex;
+  border-radius: 2rem 2rem 0 2rem;
+  display: flex;
+  background-color: #fffefc;
 }
 
 .card__picture {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 1.7rem 1rem 1rem;
-    border: 0.1rem solid #F8B334;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1.7rem 1rem 1rem;
+  border: 0.1rem solid #f8b334;
 }
 
 .card__title {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .card__idea {
-    text-align: center;
+  text-align: center;
 }
 
 .card__text {
-    line-height: 1.5;
-    margin: 1rem 2rem;
+  line-height: 1.5;
+  margin: 1rem 2rem;
 }

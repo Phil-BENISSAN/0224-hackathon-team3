@@ -19,6 +19,7 @@ function HomePage() {
           l'anonymat pour encourager une participation honnête.
         </p>
         <DropAnIdea />
+        <h2 className="titleSlider">Les idées partagées</h2>
         <Slider />
       </main>
     </>
