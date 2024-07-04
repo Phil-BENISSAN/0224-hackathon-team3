@@ -8,47 +8,50 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer>
-      <ul>
-        <li>
+    <footer className="footer">
+      <ul className="footer__ul">
+        <li className="footer__li">
           <a
             href="https://www.linkedin.com/includify"
             target="_blank"
             rel="noreferrer"
+            className="footer__linkedin-link"
           >
-            <img src={linkedin} alt="lien vers la page linkedin d'Includify'" />
+            <img src={linkedin} alt="lien vers la page linkedin d'Includify" className="footer__linkedin-img" />
           </a>
         </li>
-        <li>
+        <li className="footer__li">
           <a
             href="https://www.instagram.com/includify"
             target="_blank"
             rel="noreferrer"
+            className="footer__insta-link"
           >
             <img
               src={instagram}
-              alt="lien vers la page instagram d'Includify'"
+              alt="lien vers la page instagram d'Includify"
+              className="footer__insta-img"
             />
           </a>
         </li>
-        <li>
-          <a href="https://x.com/includify" target="_blank" rel="noreferrer">
-            <img src={x} alt="lien vers la page X d'Includify" />
+        <li className="footer__li">
+          <a href="https://x.com/includify" target="_blank" rel="noreferrer"  className="footer__x-link">
+            <img src={x} alt="lien vers la page X d'Includify"  className="footer__x-img"/>
           </a>
         </li>
-        <li>
-          <Link to="/contact">Nous contacter</Link>
+        <li className="footer__li">
+          <Link to="/contact" className="footer__contact">Nous contacter</Link>
         </li>
       </ul>
-      <ul>
-        <li>
-          <Link to="/CGU">CGU</Link>
+      <ul className="footer__ul">
+        <li className="footer__li">
+          <Link to="/CGU" className="footer__cgu">CGU</Link>
         </li>
-        <li>
-          <Link to="/ProtectionDataPolicy">Politique de confidentialité</Link>
+        <li className="footer__li">
+          <Link to="/ProtectionDataPolicy" className="footer__pdd">Politique de confidentialité</Link>
         </li>
-        <li>
-          <Link to="/LegalMentions">Mentions légales</Link>
+        <li className="footer__li">
+          <Link to="/LegalMentions" className="footer__mentions">Mentions légales</Link>
         </li>
       </ul>
     </footer>

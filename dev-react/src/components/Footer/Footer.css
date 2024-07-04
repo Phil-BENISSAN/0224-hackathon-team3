@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+}
+
+.footer__ul{
+    list-style: none;
+    flex-direction: column;
+}
+.footer__li{}
+.footer__linkedin-link{}
+.footer__linkedin-img{}
+.footer__li{}
+.footer__insta-link{}
+.footer__insta-img{}
+.footer__li{}
+.footer__x-link{}
+.footer__x-img{}
+.footer__li{}
+.footer__contact{}
+.footer__ul{}
+.footer__li{}
+.footer__cgu{}
+.footer__li{}
+.footer__pdd{}
+.footer__li{}
+.footer__mentions{}
