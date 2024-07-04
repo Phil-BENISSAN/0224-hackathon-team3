@@ -1,0 +1,32 @@
+.card {
+  background-color: #FFFEFC;
+  border: 0.1rem solid #F8B334;
+  border-radius: 2rem;
+  height: 25rem;
+  width: 17rem;
+}
+
+.card__top {
+    border-radius: 2rem 2rem 0 2rem;
+    display: flex;
+}
+
+.card__picture {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1.7rem 1rem 1rem;
+    border: 0.1rem solid #F8B334;
+}
+
+.card__title {
+    margin-left: 2rem;
+}
+
+.card__idea {
+    text-align: center;
+}
+
+.card__text {
+    line-height: 1.5;
+    margin: 1rem 2rem;
+}

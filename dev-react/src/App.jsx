@@ -1,11 +1,12 @@
 import './App.css'
 import { Outlet } from "react-router-dom";
-import HomePage from './pages/HomePage/HomePage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <main>
       <Outlet />
+      <Footer />
     </main>
   )
 }
