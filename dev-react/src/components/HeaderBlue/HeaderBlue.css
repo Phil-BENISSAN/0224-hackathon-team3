@@ -1,8 +1,9 @@
 header {
     background-color: var(--bg-secondary-color);
     border-radius: 0 0 1rem 1rem;
+    Height:120px;
 }
 
-.WhiteLogo {
+.blueLogo {
     width: 21rem;
 }

@@ -1,14 +1,14 @@
 
 import Slider from "../../components/slider/slider";
-
-import "./HomePage.css";
-
-import "./HomePage.css";
 import DropAnIdea from "../../components/DropAnIdea/DropAnIdea";
+import HeaderBlue from "../../components/HeaderBlue/HeaderBlue";
+
+import "./HomePage.css";
 
 function HomePage() {
   return (
     <>
+      <HeaderBlue />
       <main className="homepage">
         <h2 className="titleHomePage">Notre Engagement</h2>
         <p>
