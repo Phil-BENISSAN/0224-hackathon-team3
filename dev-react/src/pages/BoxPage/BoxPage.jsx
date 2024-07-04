@@ -9,7 +9,7 @@ function BoxPage() {
   const [idea, setIdea] = useState("");
 
   const submitForm = async () => {
-    const response = await fetch("YOUR_BACKEND_ENDPOINT_URL", {
+    const response = await fetch("http://localhost:8000/idea", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
