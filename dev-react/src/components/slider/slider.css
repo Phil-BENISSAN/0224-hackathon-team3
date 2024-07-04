@@ -1,6 +1,6 @@
 .swiper-button-next,
 .swiper-button-prev {
-  color: red;
+  color: var(--bg-secondary-color);
 }
 
 /* .swiper-button-next::after,
@@ -10,7 +10,7 @@
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: blue;
+  color: #F8B334;
 }
 
 .swiper-pagination-bullet {

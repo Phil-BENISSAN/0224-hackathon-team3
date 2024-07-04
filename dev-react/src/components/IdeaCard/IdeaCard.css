@@ -1,32 +1,97 @@
-.card {
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin-bottom: 5rem;
+}
+
+.flip-card-header {
+  display: flex;
   background-color: #FFFEFC;
-  border: 0.1rem solid #F8B334;
-  border-radius: 2rem;
-  height: 25rem;
-  width: 17rem;
+  border-radius: 1rem;
 }
 
-.card__top {
-    border-radius: 2rem 2rem 0 2rem;
-    display: flex;
+.flip-card-img {
+  height: 130px;
+  width: 130px;
+  border: 0.2rem solid  #F8B334;
+  border-radius: 1rem;
 }
 
-.card__picture {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 1.7rem 1rem 1rem;
-    border: 0.1rem solid #F8B334;
+.flip-card-title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-left: 0.3rem;
+  padding-top: 1rem;
 }
 
-.card__title {
-    margin-left: 2rem;
+.flip-idea-name {
+  font-size: 1.2rem;
+  margin: 1rem;
+  margin-top: 3rem;
 }
 
-.card__idea {
-    text-align: center;
+.flip-idea-text {
+  line-height: 1.5;
+  margin: 1rem;
 }
 
-.card__text {
-    line-height: 1.5;
-    margin: 1rem 2rem;
+.flip-idea-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.flip-icon-heart {
+  height: 2rem;
+}
+
+.flip-icon-thumb {
+  height: 2rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 0.2rem solid #F8B334;
+  border-radius: 1.2rem;
+}
+
+.flip-card-front {
+  background-color: #FFFEFC;
+}
+
+.flip-card-back {
+  background-color: #FFFEFC;
+  transform: rotateY(180deg);
+}
+
+.flip-back-header {
+  background-color: #F8B334;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem 1rem 0;
+}
+
+.flip-back-details {
+  margin: 2rem 1rem;
 }
