@@ -1,3 +1,10 @@
+.mainContact {
+    background-image: url("../../assets/BACKGROUND-CONTACT-PAGE.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .titleContact {
     font-family: "arimo", sans-serif;
     text-align: center;

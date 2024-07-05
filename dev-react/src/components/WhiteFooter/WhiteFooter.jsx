@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-import linkedin from "../../assets/linkedin.svg";
-import instagram from "../../assets/instagram.svg";
-import x from "../../assets/twitter-x.svg";
-import facebook from "../../assets/facebook.svg";
+import linkedin from "../../assets/blue-linkedin.svg";
+import instagram from "../../assets/blue-instagram.svg";
+import x from "../../assets/blue-twitter-x.svg";
+import facebook from "../../assets/blue-facebook.svg";
 
-import "./Footer.css";
+import "./WhiteFooter.css";
 
-function Footer() {
+function WhiteFooter() {
   return (
     <>
       <footer className="footer">
@@ -101,4 +101,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default WhiteFooter;
