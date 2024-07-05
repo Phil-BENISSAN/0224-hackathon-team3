@@ -1,12 +1,17 @@
-import blueLogo from "../../assets/includify-high-resolution-logo-white-transparent.svg"
-import "./HeaderBlue.css"
+import { Link } from "react-router-dom";
+
+import blueLogo from "../../assets/includify-high-resolution-logo-white-transparent.svg";
+
+import "./HeaderBlue.css";
 
 function HeaderBlue() {
   return (
     <header>
-        <img src={blueLogo} alt="Logo includify" className="blueLogo"/>
+      <Link to="/">
+        <img src={blueLogo} alt="Logo includify" className="blueLogo" />
+      </Link>
     </header>
-  )
+  );
 }
 
-export default HeaderBlue
+export default HeaderBlue;

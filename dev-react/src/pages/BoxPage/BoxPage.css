@@ -1,7 +1,17 @@
-.titleIdée {
-  font-family: "arimo", sans-serif;
-  text-align: center;
+.mainBoxPage {
+  background-image: url("../../assets/BACKGROUND-BOX-PAGE.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.titleIdée {
+  font-family: var(--primary-font);
+  margin-top: 5rem;
+  margin-right: 37rem;
+  color: var(--bg-primary-color);
+}
+
 .formulaireIdée {
   display: flex;
   flex-direction: column;
@@ -13,18 +23,54 @@
   margin: 1rem 0;
   width: 820px;
   height: 94px;
+  border-radius: 1rem;
+  border: none;
+}
+
+.inputIdée:hover {
+  border: solid 0.2rem;
+  border-color: #f8b334;
+}
+
+.inputIdée::placeholder {
+  font-family: var(--primary-font);
+  padding-left: 2rem;
+  font-size: medium;
 }
 
 .textareaIdée {
   margin: 1rem 0;
   width: 820px;
   height: 814px;
+  border-radius: 1rem;
+  border: none;
+}
+
+.textareaIdée:hover {
+  border: solid 0.2rem;
+  border-color: #f8b334;
+}
+
+.textareaIdée::placeholder {
+  font-family: var(--primary-font);
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-size: medium;
 }
 
 .buttonIdée {
-    font-family: "arimo", sans-serif;
-    background-color: var(--darkblue-color);
-    color: var(--bg-primary-color);
+  font-family: var(--primary-font);
+  font-size: large;
+  background-color: var(--darkblue-color);
+  color: var(--bg-primary-color);
   width: 251px;
   height: 64px;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-left: 36rem;
+}
+
+.buttonIdée:hover {
+  border: solid 0.2rem;
+  border-color: #f8b334;
 }

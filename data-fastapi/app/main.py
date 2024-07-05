@@ -2,8 +2,8 @@ import uvicorn
 from fastapi import FastAPI, Response
 import pandas as pd
 from fastapi.middleware.cors import CORSMiddleware
-
 from pydantic import BaseModel
+
 app = FastAPI()
 
 class Item(BaseModel):
@@ -42,9 +42,11 @@ def home():
 
 # Pour recuperation des donnees sur les personnes celebres
 @app.get('/personnages')
+
 def get_personnages():
     
     df_personnages = pd.read_csv("app/df_personnes_celebres.csv")
+
     dict_from_df = df_personnages.to_dict('records')
     
 # -------  INSERER VOTRE CODE ICI -----------------
