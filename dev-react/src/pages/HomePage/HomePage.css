@@ -1,3 +1,10 @@
+.homepage {
+    background-image: url("../../assets/BACKGROUND-HOME-PAGE.png");
+    width: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 .titleHomePage {
     font-family: "arimo", sans-serif;
     text-align: center;

@@ -8,8 +8,8 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <>
-      <HeaderBlue />
       <main className="homepage">
+      <HeaderBlue />
         <h2 className="titleHomePage">Notre Engagement</h2>
         <p>
           Dans un monde en constante évolution, il est crucial pour les
