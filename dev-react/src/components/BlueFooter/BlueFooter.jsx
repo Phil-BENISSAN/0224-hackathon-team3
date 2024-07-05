@@ -5,7 +5,7 @@ import instagram from "../../assets/instagram.svg";
 import x from "../../assets/twitter-x.svg";
 import facebook from "../../assets/facebook.svg";
 
-import "./Footer.css";
+import "./BlueFooter.css";
 
 function Footer() {
   return (
@@ -30,7 +30,7 @@ function Footer() {
         </ul>
 
         <ul className="footer__ul-network">
-        <li className="footer__li">
+          <li className="footer__li">
             <a
               href="https://www.facebook.com/includify"
               target="_blank"
@@ -88,13 +88,13 @@ function Footer() {
           </li>
         </ul>
         <ul>
-        <li className="footer__li-contact">
-          <Link to="/contact" className="footer__contact">
-            Contactez-nous
-          </Link>
-        </li>
-        <li className="footer__li-info">Informations</li>
-        <li className="footer__li-team">Notre équipe</li>
+          <li className="footer__li-contact">
+            <Link to="/contact" className="footer__contact">
+              Contactez-nous
+            </Link>
+          </li>
+          <li className="footer__li-info">Informations</li>
+          <li className="footer__li-team">Notre équipe</li>
         </ul>
       </footer>
     </>

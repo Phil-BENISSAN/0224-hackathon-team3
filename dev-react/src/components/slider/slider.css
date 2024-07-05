@@ -3,11 +3,6 @@
   color: var(--bg-secondary-color);
 }
 
-/* .swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 20px; 
-} */
-
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   color: #F8B334;
@@ -15,4 +10,17 @@
 
 .swiper-pagination-bullet {
   display: none;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.mySwiper {
+  position: relative;
+  width: 100%;
+  padding: 20px; /* Ajoutez un rembourrage pour faire de la place aux flèches */
 }
