@@ -1,29 +1,11 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/Logo_Includify.svg";
 import heart from "../../assets/heart.svg";
 import thumb from "../../assets/thumb-down.svg";
 import "./IdeaCard.css";
 
-// Fonction pour sélectionner un personnage aléatoirement
-function getRandomCharacter(characters) {
-  const randomIndex = Math.floor(Math.random() * characters.length);
-  return characters[randomIndex];
-}
-
 function IdeaCard({ characters }) {
-  const [randomCharacter, setRandomCharacter] = useState(null);
 
-  useEffect(() => {
-    if (characters.length > 0) {
-      setRandomCharacter(getRandomCharacter(characters));
-    }
-  }, [characters]);
-
-  if (!randomCharacter) {
-    return <div>Loading...</div>; // Affiche un message de chargement si le personnage n'est pas encore sélectionné
-  }
-
-  const { Nom, Texte, Image } = randomCharacter;
+  const { Nom, Texte, Image } = characters;
   return (
     <section className="flip-card">
       <div className="flip-card-inner">

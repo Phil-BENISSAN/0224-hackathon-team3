@@ -5,6 +5,7 @@
   perspective: 1000px;
   font-family: sans-serif;
   margin-bottom: 5rem;
+  display: block;
 }
 
 .flip-card-header {

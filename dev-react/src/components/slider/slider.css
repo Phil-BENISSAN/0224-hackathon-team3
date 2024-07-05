@@ -18,3 +18,9 @@
   align-items: center;
   margin-top: 5rem;
 }
+
+.mySwiper {
+  position: relative;
+  width: 100%;
+  padding: 20px; /* Ajoutez un rembourrage pour faire de la place aux flèches */
+}
