@@ -1,26 +1,30 @@
 .dropAnIdeaContainer {
   background-color: var(--bg-secondary-color);
-  width: 720px;
-  height: 179px;
-  border-radius: 40px;
-  margin: auto;
+  width: 40%;
+  height: 120px;
+  border-radius: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .dropAnIdeaCaption {
+  font-family: var(--primary-font);
   color: var(--bg-primary-color);
   font-weight: 700;
-  font-size: 45px;
-  margin-bottom: 1rem;
+  font-size:x-large;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 .dropAnIdeaButton {
-  width: 200px;
-  height: 57px;
-  border-radius: 20px;
+  height: 30px;
+  border: none;
+  border-radius: 0.7rem;
   background-color: var(--darkblue-color);
   color: var(--bg-primary-color);
+  font-family: var(--primary-font);
+  font-size: large;
+  padding: 0 1rem;
 }
