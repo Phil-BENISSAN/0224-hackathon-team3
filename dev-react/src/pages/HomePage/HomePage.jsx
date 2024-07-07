@@ -8,7 +8,7 @@ import BlueFooter from "../../components/BlueFooter/BlueFooter";
 import "./HomePage.css";
 
 function HomePage() {
-  const characters = useLoaderData();
+  const {personnages, ideas} = useLoaderData();
 
   return (
     <>
@@ -24,7 +24,7 @@ function HomePage() {
         </p>
         <DropAnIdea />
         <h2 className="titleSlider">Les idées partagées</h2>
-        <Slider characters={characters} />
+        <Slider personnages={personnages} ideas={ideas} />
       </main>
       <BlueFooter />
     </>

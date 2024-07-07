@@ -21,9 +21,15 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
-        loader: () => fetch("http://localhost:8000/personnages")
-        .then((response) => response.json())
-        .then((data) => data),
+        loader: async () => {
+          const personnagesResponse = await fetch("http://localhost:8000/personnages");
+          const personnagesData = await personnagesResponse.json();
+          
+          const ideasResponse = await fetch("http://localhost:8000/ideas");
+          const ideasData = await ideasResponse.json();
+          
+          return { personnages: personnagesData, ideas: ideasData };
+        },
       },
       {
         path: "/contact",

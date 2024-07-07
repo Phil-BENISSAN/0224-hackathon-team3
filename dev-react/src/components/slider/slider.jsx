@@ -8,18 +8,28 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./slider.css";
 
-function getRandomCharacters(characters, num = 10) {
-  const shuffled = characters.sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, num);
+function shuffleArray(array) {
+  return [...array].sort(() => 0.5 - Math.random());
 }
 
-export default function Slider({ characters }) {
-  const [randomCharacters, setRandomCharacters] = useState(getRandomCharacters(characters));
+function getRandomPairs(personnages, ideas, num) {
+  const shuffledCharacters = shuffleArray(personnages).slice(0, num);
+  const shuffledIdeas = shuffleArray(ideas).slice(0, num);
+  return shuffledCharacters.map((character, index) => ({
+    character,
+    idea: shuffledIdeas[index],
+  }));
+}
+
+export default function Slider({ personnages, ideas }) {
+  const [randomPairs, setRandomPairs] = useState([]);
+
   useEffect(() => {
-    if (characters.length > 0) {
-      setRandomCharacters(getRandomCharacters(characters, 10));
+    if (personnages.length > 0 && ideas.length > 0) {
+      const numPairs = Math.min(personnages.length, ideas.length, 10);
+      setRandomPairs(getRandomPairs(personnages, ideas, numPairs));
     }
-  }, [characters]);
+  }, [personnages, ideas]);
 
   return (
     <Swiper
@@ -49,14 +59,11 @@ export default function Slider({ characters }) {
       modules={[Pagination, Keyboard, Navigation]}
       className="mySwiper"
     >
-      {randomCharacters.map(character => (
-        <SwiperSlide>
-          <IdeaCard characters={character} />
+      {randomPairs.map(({ character, idea }) => (
+        <SwiperSlide key={character.name}>
+          <IdeaCard character={character} idea={idea} />
         </SwiperSlide>
       ))}
-      {/* <SwiperSlide>
-        {randomCharacters.map(character => <IdeaCard characters={character} />)}
-      </SwiperSlide> */}
     </Swiper>
   );
 }

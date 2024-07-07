@@ -1,8 +1,17 @@
 .homepage {
+    background-image: url("../../assets/BACKGROUND-HOME-PAGE.png");
+    width: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+.titleHomePage {
+    font-family: "arimo", sans-serif;
+    text-align: center;
 }
 
 .titleHomePage {
