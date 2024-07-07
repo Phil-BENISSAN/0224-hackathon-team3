@@ -3,9 +3,9 @@ import heart from "../../assets/heart.svg";
 import thumb from "../../assets/thumb-down.svg";
 import "./IdeaCard.css";
 
-function IdeaCard({ characters }) {
-
-  const { Nom, Texte, Image } = characters;
+function IdeaCard({ character, idea }) {
+  const { Nom, Texte, Image } = character;
+  const { title, idea: ideaText } = idea;
   return (
     <section className="flip-card">
       <div className="flip-card-inner">
@@ -14,10 +14,8 @@ function IdeaCard({ characters }) {
             <img src={Image} alt={Nom} className="flip-card-img" />
             <h3 className="flip-card-title">{Nom}</h3>
           </header>
-          <h4 className="flip-idea-name">Thème idée</h4>
-          <p className="flip-idea-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae excepturi expedita laudantium veniam ipsam libero sequi natus eaque nulla minima doloribus, maiores eveniet qui deserunt molestias? Neque reiciendis quaerat error?
-          </p>
+          <h4 className="flip-idea-name">{title}</h4>
+          <p className="flip-idea-text">{ideaText}</p>
         </article>
         <article className="flip-card-back">
           <header className="flip-back-header">
